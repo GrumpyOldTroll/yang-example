@@ -1,0 +1,38 @@
+{
+  "example-sports:sports": {
+    "person": [
+      {
+        "name": "Cristiano Ronaldo",
+        "birthday": "1985-02-05T00:00:00-00:00"
+      },
+      {
+        "name": "Lionel Andrés Messi",
+        "birthday": "1987-06-24T00:00:00-00:00"
+      }
+    ],
+    "team": [
+      {
+        "name": "FC Barcelona",
+        "player": [
+          {
+            "name": "Lionel Andrés Messi",
+            "season": "Champions League 2014/2015",
+            "number": 10,
+            "scores": 43
+          }
+        ]
+      },
+      {
+        "name": "Real Madrid",
+        "player": [
+          {
+            "name": "Cristiano Ronaldo",
+            "season": "Champions League 2014/2015",
+            "number": 7,
+            "scores": 48
+          }
+        ]
+      }
+    ]
+  }
+}
