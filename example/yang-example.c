@@ -48,6 +48,7 @@ int main(int nargs, const char** args) {
     return -4;
   }
 
+  lyd_free(in_data);
   ly_ctx_destroy(ctx, 0);
   return 0;
 }
@@ -158,6 +159,7 @@ int examine_data(const struct lyd_node* root) {
     }
     ly_set_free(played_set);
   }
+  ly_set_free(names);
 
 #if 0
   char* xml_out = 0;
