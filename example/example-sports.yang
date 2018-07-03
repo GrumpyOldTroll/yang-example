@@ -1,3 +1,11 @@
+/*
+ * example model and data copied from wikipedia in June 2018, uri:
+ * https://en.wikipedia.org/wiki/YANG#Example
+ *
+ * Licensed under Creative Commons Attribution ShareAlike 3.0 Unported License
+ * https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License
+ * https://creativecommons.org/licenses/by-sa/3.0/
+ */
 module example-sports {
 
   namespace "http://example.com/example-sports";

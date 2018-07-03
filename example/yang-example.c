@@ -1,3 +1,7 @@
+/*
+ * Copyright Akamai, 2018.
+ * MIT-licensed (see LICENSE)
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

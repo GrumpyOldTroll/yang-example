@@ -1,3 +1,4 @@
+# Copyright Akamai 2018, MIT-licensed (see LICENSE)
 FROM ubuntu:latest
 MAINTAINER Jake Holland <jholland@akamai.com>
 
@@ -20,6 +21,7 @@ USER yangex
 
 RUN git clone https://github.com/CESNET/libyang
 RUN cd libyang && ( ( cmake -DENABLE_CACHE=OFF . && make && sudo make install ) ; cd .. )
+RUN cd libyang/src/extensions && ( ( make && sudo make install ) ; cd ../../.. )
 
 ENV LD_LIBRARY_PATH /usr/local/lib
 COPY --chown=yangex:yangex example/* /home/yangex/
