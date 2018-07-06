@@ -20,11 +20,12 @@ WORKDIR /home/yangex
 USER yangex
 
 RUN git clone https://github.com/CESNET/libyang
-RUN cd libyang && ( ( cmake -DENABLE_CACHE=OFF . && make && sudo make install ) ; cd .. )
+RUN cd libyang && ( ( cmake . && make && sudo make install ) ; cd .. )
+#RUN cd libyang && ( ( cmake -DENABLE_CACHE=OFF . && make && sudo make install ) ; cd .. )
 RUN cd libyang/src/extensions && ( ( make && sudo make install ) ; cd ../../.. )
 
 ENV LD_LIBRARY_PATH /usr/local/lib
 COPY --chown=yangex:yangex example/* /home/yangex/
 RUN ./build.sh
-RUN ./yex
+#RUN ./yex
 ENTRYPOINT ["/bin/bash"]
